@@ -53,9 +53,9 @@ df = pd.concat([df, city_encoded_df], axis=1)
 print("Encoding complete!")
 
 # ==========================================
-# 2. FEATURE SCALING
+# 2. FEATURE SCALING & PLOTTING
 # ==========================================
-print("\n--- Applying Scalers ---")
+print("\n--- Applying Scalers & Generating Plots ---")
 numeric_cols = [f"num_feat_{i}" for i in range(5)]
 
 std_scaler = StandardScaler()
